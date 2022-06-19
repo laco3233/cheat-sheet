@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--Most html files start with the <!DOCTYPE html> tag-->
+<!-- All html tags must be within the <html> tag-->
+<html>
+
+<!-- this head section is a container used to link to css file and some fonts from websites like googlefonts and a browser title. Metadata-->
+
+<head>
+    <!--The <link> tag is used to like the HTML DOC to something outside of it, like a css style sheet-->
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+    <!--the <title> tag is used to display the websites title in the browser tab, must be text only required in every html doc-->
+    <title>Trevors Cheat Sheet</title>
+</head>
+<!-- The <body> tag is used to define the documents body, it contains ALL of the contents-->
+
+<body>
+    <!-- the <header> tag defines a division of an html document, used as a container, styled by using the class or id attribute-->
+    <header>
+        <!--the <h#> tags are headers or banners on the page. Each getting smaller from 1-6-->
+        <h1>Trevors Cheat Sheet</h1>
+    </header>
+    <div id="about" class="about">
+        <h2>About this page</h2>
+        <!--the <p> tag is a paragraph, use it for writing things out-->
+        <p>This page is used for my own personal cheat sheet as I learn. There will be various notes in a format
+            that I can understand, not for everyone.
+            Some notes will be longer than others, those are areas that I struggled at. Some things may be out of
+            place.
+            I will be coming back and updating this as I learn more. </p>
+    </div>
+    <div id="border" class="border">
+        <h3>Borders</h3>
+        <h4>this portion will display different border options from images to basic box borders</h4>
+        <p>In this paragraph you will notice it is contained within a solid border,<br> but the frog is within a circle
+            using the border-radius attribute</p>
+        <!--the <img> tag is used to display an image, can be local "../filepath" or url-->
+        <img src="../Cheat Sheet/Resources/Frog_on_palm_frond.jpg" alt="Circle Frog">
+
+    </div>
+    <div id="table">
+        <h3>Tables and Colors</h3>
+        <h4>This section wil be a brief portion on tables and Colors</h4>
+        <!--Tables are created using multiple tags. The overall main tag is <table>-->
+        <table id="table1">
+            <!--Everything contained within the <thead> tag should only be for the table header like column names-->
+            <thead>
+                <!--The <th> tag is used for table headers, a table will only have one column per <th> tag-->
+                <th>Color</th>
+                <th>RGB</th>
+                <th>HSL</th>
+                <th>Hexidecimal</th>
+            </thead>
+            <!--The <tbody> tag denotes the body of a table and contatins the <tr> (Table Row) and <td> (Table Data) tags-->
+            <tbody>
+                <!--the <tr> tag is for an entire table row-->
+                <tr id="blue">
+                    <!--the <td> tag is for a tables individual cell data-->
+                    <td id="one">This is Color name Blue</td>
+                    <td id="two">This is a blue variant using RGB</td>
+                    <td id="three">This is a blue variant using HSL</td>
+                    <td id="four">This is a blue variant using Hex colors</td>
+                </tr>
+                <tr id="red">
+                    <td id="one">This is Color name Red</td>
+                    <td id="two">This is a Red variant using RGB</td>
+                    <td id="three">This is a Red variant using HSL</td>
+                    <td id="four">This is a Red variant using Hex colors</td>
+                </tr>
+                <tr id="yellow">
+                    <td id="one">This is Color name Yellow</td>
+                    <td id="two">This is a Yellow variant using RGB</td>
+                    <td id="three">This is a Yellow variant using HSL</td>
+                    <td id="four">This is a Yellow variant using Hex colors</td>
+                </tr>
+            </tbody>
+            <!--The <tfoot> tag is for the table footer it can be used for vaious things like totals-->
+            <tfoot id="footer">
+                <!--I used the colspan attribute here because I could not get the row to span the entire table in the css stylesheet-->
+                    <td colspan="4" id="foot">This is the table footer section</td>                
+            </tfoot>
+        </table>
+    </div>
+    <!--The <footer> tag is used for the end of the page if needed, it is not required. Can contain various information-->
+    <footer>
+        <p>This is a footer but also a navigation area. These are some useful links provided from where I am learning
+        </p>
+        <nav>
+            <!--The <ul> tag (Unorder List) is a list of something, here it is links ul shows bullets for the items in it. an <ol> tage(ordererd list) shows numbers-->
+            <ul>
+                <!--the <li> tag (List Item) is used for the items contained in a list. They can be text or like here links -->
+                <!--the <a> tag (Anchor) is used to create links (NOT THE <link> TAG)-->
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Elements</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN CSS</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">MDN CSS Colors</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
+<!--Started on 6/16/2022, time spent on this page 7 hours. Please update when done working each and every time-->

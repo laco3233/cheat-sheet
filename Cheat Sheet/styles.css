@@ -1,0 +1,161 @@
+/*The font-face is used to import fonts that are not standard fonts. You can import them in either the HTML DOC or Style sheet, here they are in the style scheet*/
+@font-face {
+    font-family: 'Cheat Sheet';
+    src: url(https://fonts.gstatic.com/s/permanentmarker/v16/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2) format('woff2');
+}
+/*This is determining the header class(denoted by the period) style using various style attributes*/
+header{
+    /*font-family is to determine the font used in the header calss. Using an imported fornt from google fonts Permanent marker. The @font-face is trhe importing of the font usinng a url
+ The back up fonts are listed after that dellimited by comma's. To access the font, navigate using the last url provided and copy the src line into the @font-face, you could copy the
+ entire @font-face code from there, I only did the source line for this*/
+    font-family: "Cheat Sheet", Helvetica, sans-serif;
+    /*the background-image is being used as the background for the header, there is nothing here resizing the image so it looks duplicated accross the entire screen*/
+    background-image: url("../Cheat Sheet/Resources/Cheat sheet image.jpg");
+    /*the text-align is centering the text of the header on the page*/
+    text-align: center;
+    /*the font-size is used to control the size of the font in the header*/
+    font-size:  50px;
+    /*the height and width determin the size of the element not including the padding, borders, and margins */ 
+    height: 200px;
+    width: 100%;
+    /*The position is used to position the element on the page. Fixed causes the element to remain fixed on the page, even when scrolling. 
+    Can cause other elements to fall behind it due to essentially removing the element from the flow of the page, must find a way to work around it*/
+    position: relative;
+}
+/*This denotes on the <div> tag with the id of about by placing the hashtag before the id value, no other div should follow these rules.
+Similarly you can use the class attribute and denote it by placing a period before the class value */
+#about{
+    text-align: center;
+}
+
+
+
+#border{
+    text-align: center;
+}
+#border p{
+    /*This border attribute adds a solid black border 5px wide around the paragraph*/
+    border: 5px solid;
+    /*Using the float attribute, I placed the paragraph on the left side of the box*/
+    float: left;
+    /*Using the margin-left has pushed both th e<p> tag and <img> tag for the border ID to the right it appears to center the two items in the same row*/
+    margin-left: 200px;
+}
+#border img{
+    /*Using the float atttribute with the inline-end value, I put the frog picture to the right of the paragraph.
+    If I add anything more it will be pushed to the right of that new item*/
+    float: inline-end;
+    height: 150px;
+    width: 150px;
+    /*This border attribute adds a 2px high dotted black border around the image*/
+    border: 2px dotted;
+    /*By using the border-radius attribut, I made the image into a circle*/
+    border-radius: 50%;
+}
+
+#table{
+    text-align: center;
+    height: 300px;
+    
+}
+#table1{
+    border: 1px solid;
+    text-align: center;
+    width: 100%;
+    /*By using the table-layout attribute with the fixed option, the table cells are all the same size*/
+    table-layout: fixed;
+}
+td{
+    border: 5px solid green;
+    /*The border-collapse attirbute is used to either make the cell borders for each individual cell or shared in a single border*/
+    border-collapse: collapse;
+    height: 25px;
+}
+#blue{    
+    /*The color attribute denotes the foreground color, here it is the text color*/
+    color: white;
+}
+#blue #one{
+    /*The background-color attribute is used to select the background color*/
+    /*Color selected using the color name */
+    background-color: blue;
+}
+
+#blue #two{
+    /*Color selected using the RGB option, can also be rgba with a alpha parametr for more color options by the alpha specifying the opacity of a color alpha value denoted by 0-1 */
+    background-color: rgb(0, 77, 219);
+}
+#blue #three{
+     /*Color selected using the HSL option, can also be hsla with a alpha parametr for more color options by the alpha specifying the opacity of a color alpha value denoted by 0-1*/
+    background-color: hsl(250, 50%, 45%);
+}
+
+#blue #four{
+    /*Color selected using the hexidecimal value for a color, gives more options than just the color name*/
+    background-color: #0000ff;
+}
+
+#red{
+    color: black;
+}
+
+#red #one{
+    background-color: red;
+}
+
+#red #two{
+    background-color: rgb(219, 10, 30);
+}
+
+#red #three{
+    background-color: hsl(0, 50%, 45%);
+}
+
+#red #four{
+    background-color: #aa0000;
+}
+
+#yellow{
+    color: green;
+}
+
+#yellow #one{
+    background-color: yellow;
+}
+
+#yellow #two{
+    background-color: rgb(219, 205, 10);
+}
+
+#yellow #three{
+    background-color: hsl(59, 50%, 45%);
+}
+
+#yellow #four{
+    background-color: #fffb00;
+}
+
+/*By calling out the <ul> tag here I aligned the List Items in the footer in the center of the page.
+This could cause problems as I used the tag and any new unorder list I add will also have this, keep an eye out*/
+ul{
+    align-items: center;
+}
+/*By using the <li> tag I can manipulate the styling of all list items on the page, Thsi could cause issues if I add any more list items, keep an eye out*/
+li{
+    /*The color attribute is used here to change the text color to better be legible against the footer bacground-color*/
+    color: white;
+    /*Using the display attribute with the inline-block value, I put the list items into a single horizontal line rather than the default vertical layout*/
+    display: inline-block;
+}
+
+footer{
+    /*By using the position attribute with a fixed value I have made the footer appear at the bottom of the page and it will remain there even when scrolling*/
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: grey;
+    /*By using the background-color attribute, The footer stands out from the rest of the page by having a distict color accros the whole screen*/
+    background-color: lightblue;
+}
